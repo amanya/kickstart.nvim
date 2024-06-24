@@ -142,6 +142,7 @@ require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
   'tpope/vim-fugitive', -- A Git wrapper so awesome, it should be illegal
+  'pocco81/auto-save.nvim', -- Automatically save your changes in NeoVim
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -498,7 +499,7 @@ require('lazy').setup({
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
-        -- clangd = {},
+        clangd = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
